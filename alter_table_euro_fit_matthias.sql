@@ -1,3 +1,5 @@
+USE euro_fit_matthias;
+
 -- Bon, on va devoir altérer une table. La table salles contient des salles qui peuvent être de type cycliste ou non cycliste, on peut remplacer ça par un booléen.alter
 
 ALTER TABLE salles

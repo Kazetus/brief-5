@@ -1,7 +1,9 @@
+USE euro_fit_matthias;
+
 -- Testons les vues
 
-select * from vue_services;
-select * from vue_donnee;
+SELECT * FROM vue_services;
+SELECT * FROM vue_donnee;
 
 -- Connaitre toutes les ventes, qui a acheté, dans quel club et combien ça a couté.
 
