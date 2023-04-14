@@ -95,6 +95,7 @@ CREATE TABLE abonnement(
   `reduc_complement` TINYINT NOT NULL,
   `reduc_medecine` TINYINT NOT NULL,
   `reduc_coach` TINYINT NOT NULL,
+  `tarif` SMALLINT NOT NULL,
   PRIMARY KEY (`id_abonnement`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -425,7 +426,7 @@ INNER JOIN membres mb ON mb.id_membres = sv.id_membres
 INNER JOIN abonnement ab ON ab.id_abonnement = mb.id_abonnement;
 
 CREATE VIEW vue_donnee AS
-SELECT nom_membres, prenom_membres, IMC, metabolisme, besoins, masse_seche, contenu_mineral, eau_totale, masse_grasse, masse_musculaire, masse_hydrique, titre
+SELECT nom_membres, prenom_membres, IMC, metabolisme, besoins, masse_seche, contenu_mineral, eau_totale, masse_grasse, masse_musculaire, masse_hydrique, titre, tarif
 FROM donnees_corporelles dc
 INNER JOIN membres mb ON mb.id_membres = dc.id_membres
 INNER JOIN abonnement ab ON ab.id_abonnement = mb.id_abonnement;

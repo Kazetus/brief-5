@@ -16,15 +16,15 @@ INSERT INTO `fonctions` (`fonctions`) VALUES
 
 -- insertion de quelques abonnements
 
-INSERT INTO `abonnement` (`titre`, `tout_club`, `toutes_salles`,`tout_pays`, `reduc_complement`, `reduc_medecine`, `reduc_coach`) VALUES 
-( 'VIP', true, true, true, 100, 0, 100),
-( 'premium version international', true, true, true, 25, 0, 25 ),
-( 'premium', false, true, false, 25, 0, 25),
-( 'cycliste international', true, true, true, 100, 100, 0),
-( 'cycliste d\'eau douce', false, true, false, 0, 0, 0),
-( 'le muscle est partout', true, true, true, 100, 100, 0),
-( 'coach', false, false, false, 0, 0, 0),
-( 'sécurité et ménage', false, false, false, 0, 0, 0);
+INSERT INTO `abonnement` (`titre`, `tout_club`, `toutes_salles`,`tout_pays`, `reduc_complement`, `reduc_medecine`, `reduc_coach`, `tarif`) VALUES 
+( 'VIP', true, true, true, 100, 0, 100, 200),
+( 'premium version international', true, true, true, 25, 0, 25, 175),
+( 'premium', false, true, false, 25, 0, 25, 150),
+( 'cycliste international', true, true, true, 100, 100, 0, 150),
+( 'cycliste d\'eau douce', false, true, false, 0, 0, 0, 100),
+( 'le muscle est partout', true, true, true, 100, 100, 0, 150),
+( 'coach', false, false, false, 0, 0, 0, 50),
+( 'sécurité et ménage', false, false, false, 0, 0, 0 , 0);
 
 -- Insertion de quelques villes
 
